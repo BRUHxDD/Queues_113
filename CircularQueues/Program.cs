@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -115,6 +116,23 @@ namespace CircularQueues
                     FRONT_position++;
                 }
                 Console.WriteLine();
+            }
+        }
+        static void Main(string[] args)
+        {
+            Program queue = new Program();
+            char ch;
+            while (true)
+            {
+                Console.WriteLine("Menu");
+                Console.WriteLine("1. Implement insert operations");
+                Console.WriteLine("2. Implement delete operations");
+                Console.WriteLine("3. Display values");
+                Console.WriteLine("4. Exit");
+                Console.Write("\nEnter your choice (1-4):  ");
+                ch = Convert.ToChar(Console.Read());
+                Console.WriteLine();
+                switch (ch)
             }
         }
     }
