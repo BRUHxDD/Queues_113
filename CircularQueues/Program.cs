@@ -154,7 +154,18 @@ namespace CircularQueues
                                 queue.display();
                             }
                             break;
+                        case '4':
+                            return;
+                        default:
+                            {
+                                Console.WriteLine("Invalid option!!");
+                            }
+                            break;
                     }
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Check for the values enter");
                 }
             }
         }
