@@ -124,15 +124,28 @@ namespace CircularQueues
             char ch;
             while (true)
             {
-                Console.WriteLine("Menu");
-                Console.WriteLine("1. Implement insert operations");
-                Console.WriteLine("2. Implement delete operations");
-                Console.WriteLine("3. Display values");
-                Console.WriteLine("4. Exit");
-                Console.Write("\nEnter your choice (1-4):  ");
-                ch = Convert.ToChar(Console.Read());
-                Console.WriteLine();
-                switch (ch)
+                try
+                {
+                    Console.WriteLine("Menu");
+                    Console.WriteLine("1. Implement insert Operations");
+                    Console.WriteLine("2. Implement delet operations");
+                    Console.WriteLine("3. Display value");
+                    Console.WriteLine("4. Exit");
+                    Console.WriteLine("\nEnter your choice (1-4):  ");
+                    ch = Convert.ToChar(Console.ReadLine());
+                    Console.WriteLine();
+                    switch (ch)
+                    {
+                        case '1':
+                            {
+                                Console.Write("Enter a number: ");
+                                int num = Convert.ToInt32(System.Console.ReadLine());
+                                Console.WriteLine();
+                                queue.insert(num);
+                            }
+                            break;
+                    }
+                }
             }
         }
     }
