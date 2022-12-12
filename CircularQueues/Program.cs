@@ -77,5 +77,11 @@ namespace CircularQueues
                     FRONT = FRONT+ 1;
             }
         }
+        public void display()
+        {
+            int FRONT_position = FRONT;
+            int REAR_position = REAR;
+            }
+        }
     }
 }
